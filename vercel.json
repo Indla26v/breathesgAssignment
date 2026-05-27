@@ -1,0 +1,9 @@
+{
+  "experimentalServices": {
+    "breathe-esg-api": {
+      "type": "web",
+      "routePrefix": "/",
+      "buildCommand": "pip install -r requirements.txt && python backend/manage.py collectstatic --noinput && python backend/manage.py migrate"
+    }
+  }
+}
