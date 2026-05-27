@@ -1,3 +1,13 @@
+envGroups:
+  - name: breathe-esg-common
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DJANGO_SETTINGS_MODULE
+        value: config.settings.production
+      - key: PYTHONPATH
+        value: backend
+
 services:
   - type: web
     name: breathe-esg-api
@@ -5,20 +15,16 @@ services:
     buildCommand: "pip install -r requirements.txt && python backend/manage.py collectstatic --noinput && python backend/manage.py migrate"
     startCommand: "gunicorn config.wsgi:application --bind 0.0.0.0:$PORT --workers 2"
     envVars:
-      - key: DJANGO_SETTINGS_MODULE
-        value: config.settings.production
-      - key: SECRET_KEY
-        generateValue: true
+      - fromGroup: breathe-esg-common
       - key: DATABASE_URL
         fromDatabase:
           name: breathe-esg-db
           property: connectionString
       - key: REDIS_URL
         fromService:
+          type: redis
           name: breathe-esg-redis
           property: connectionString
-      - key: PYTHONPATH
-        value: backend
 
   - type: worker
     name: breathe-esg-worker
@@ -26,23 +32,22 @@ services:
     buildCommand: "pip install -r requirements.txt"
     startCommand: "celery -A config.celery worker --loglevel=info --concurrency=2"
     envVars:
-      - key: DJANGO_SETTINGS_MODULE
-        value: config.settings.production
-      - key: SECRET_KEY
-        fromService:
-          name: breathe-esg-api
-          property: envVar:SECRET_KEY
+      - fromGroup: breathe-esg-common
       - key: DATABASE_URL
         fromDatabase:
           name: breathe-esg-db
           property: connectionString
       - key: REDIS_URL
         fromService:
+          type: redis
           name: breathe-esg-redis
           property: connectionString
-      - key: PYTHONPATH
-        value: backend
+
+  - type: redis
+    name: breathe-esg-redis
+    ipAllowList: [] # Allow all internal traffic
 
 databases:
   - name: breathe-esg-db
     plan: free
+
