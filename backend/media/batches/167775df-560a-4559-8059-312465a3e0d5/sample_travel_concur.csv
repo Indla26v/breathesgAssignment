@@ -1,0 +1,31 @@
+Report Name,Report ID,Employee,Department,Expense Type,Travel Date,Vendor,Origin,Destination,Amount,Currency,Distance,Distance Unit,Nights,Ticket Class
+Q3 Travel,RPT-2891,Jane Smith,Engineering,Airfare,2023-10-05,United Airlines,SFO,JFK,842.00,USD,,,1,Economy
+Q3 Travel,RPT-2891,Jane Smith,Engineering,Hotel,2023-10-05,Marriott NYC,,,,289.00,USD,,1,
+Q3 Travel,RPT-2892,Bob Jones,Sales,Car Rental,2023-10-06,Hertz,,,,195.00,USD,450,MI,3,
+Q3 Travel,RPT-2893,Alice Chen,Marketing,Airfare,2023-10-07,Delta,LHR,CDG,1200.00,USD,,,1,Business
+Q3 Travel,RPT-2893,Alice Chen,Marketing,Airfare,2023-10-07,Delta,JFK,LHR,1500.00,USD,,,1,Business
+Q3 Travel,RPT-2893,Alice Chen,Marketing,Hotel,2023-10-07,Hilton London,,,,350.00,USD,,3,
+Q3 Travel,RPT-2891,Jane Smith,Engineering,Airfare,2023-10-10,United Airlines,JFK,SFO,842.00,USD,,2586,MI,1,Economy
+Q3 Travel,RPT-2892,Bob Jones,Sales,Car Rental,2023-10-11,Hertz,,,,195.00,USD,,,3,
+Q3 Travel,RPT-2891,Jane Smith,Engineering,Rail,2023-10-12,Amtrak,,50.00,USD,,150,MI,,
+Q3 Travel,RPT-2894,Jane Smith,Engineering,Airfare,2023-10-13,United Airlines,SFO,LAX,150.00,USD,,,1,Economy
+Q3 Travel,RPT-2894,Jane Smith,Engineering,Hotel,2023-10-13,Sheraton LA,,,,210.00,USD,,2,
+Q3 Travel,RPT-2894,Jane Smith,Engineering,Car Rental,2023-10-13,Enterprise,,,,120.00,USD,,,2,
+Q3 Travel,RPT-2895,Bob Jones,Sales,Airfare,2023-10-15,American Airlines,DFW,ORD,350.00,USD,,,1,Economy
+Q3 Travel,RPT-2895,Bob Jones,Sales,Hotel,2023-10-15,Hyatt Chicago,,,,250.00,USD,,2,
+Q3 Travel,RPT-2895,Bob Jones,Sales,Car Rental,2023-10-15,Avis,,,,110.00,USD,80,MI,2,
+Q3 Travel,RPT-2896,Alice Chen,Marketing,Airfare,2023-10-18,Lufthansa,CDG,FRA,320.00,USD,,,1,Economy
+Q3 Travel,RPT-2896,Alice Chen,Marketing,Hotel,2023-10-18,Westin Frankfurt,,,,280.00,USD,,1,
+Q3 Travel,RPT-2897,Jane Smith,Engineering,Airfare,2023-10-20,Singapore Air,SFO,SIN,2400.00,USD,,,1,First
+Q3 Travel,RPT-2897,Jane Smith,Engineering,Hotel,2023-10-20,Marina Bay Sands,,,,650.00,USD,,4,
+Q3 Travel,RPT-2897,Jane Smith,Engineering,Taxi,2023-10-20,Singapore Taxi,,,,35.00,SGD,,,,
+Q3 Travel,RPT-2898,Bob Jones,Sales,Airfare,2023-10-22,United Airlines,LAX,JFK,600.00,USD,,,1,Premium Economy
+Q3 Travel,RPT-2898,Bob Jones,Sales,Hotel,2023-10-22,W Hotel NYC,,,,450.00,USD,,2,
+Q3 Travel,RPT-2898,Bob Jones,Sales,Taxi,2023-10-22,Uber,,,,65.00,USD,,,,
+Q3 Travel,RPT-2899,Alice Chen,Marketing,Airfare,2023-10-25,British Airways,LHR,JFK,1800.00,USD,,3451,MI,1,Business
+Q3 Travel,RPT-2899,Alice Chen,Marketing,Hotel,2023-10-25,The Plaza NYC,,,,950.00,USD,,3,
+Q3 Travel,RPT-2900,Jane Smith,Engineering,Rail,2023-10-28,Eurostar,,120.00,EUR,,300,KM,,
+Q3 Travel,RPT-2900,Jane Smith,Engineering,Taxi,2023-10-28,Uber Paris,,,,45.00,EUR,,,,
+Q3 Travel,RPT-2901,Bob Jones,Sales,Car Rental,2023-10-30,Hertz,,,,180.00,USD,,,2,
+Q3 Travel,RPT-2902,Alice Chen,Marketing,Rail,2023-11-01,Amtrak,,60.00,USD,,120,MI,,
+Q3 Travel,RPT-2903,Jane Smith,Engineering,Airfare,2023-11-02,Delta,SFO,JFK,750.00,USD,,,1,Economy
